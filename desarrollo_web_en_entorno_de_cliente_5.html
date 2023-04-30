@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo web en entorno cliente. Actividad práctica 5</title>
+    <script>
+        /*Realiza un script que al pulsar un botón, solicite una fecha de nacimiento en el formato dd/mm/yyyy y muestre la edad que tiene.*/
+        var currentDate = new Date();
+        var currentYear = currentDate.getFullYear();
+
+        var birthDate = prompt("Introduce tu fecha de nacimiento en formato dd/mm/yyyy");
+        var birthYear = birthDate.split("/")[2];
+
+        var age = currentYear - Number(birthYear);
+      
+        alert("Tienes " + age + " años");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

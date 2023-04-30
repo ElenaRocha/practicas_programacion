@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo web en entorno cliente. Actividad práctica 2</title>
+    <script>
+        /*Realiza un script para que pida al usuario dos números y solicite que operación quiere realizar (1 Sumar, 2 Restar, 3 Multiplicar, 4 Dividir). Finalmente muestre el resultado de la operación e indique si quiere repetir la operación (S/N). El programa finaliza cuando el usuario introduce N.*/
+        //No he conseguido que funcione la parte de repetir la operación
+        do {
+            var number1 = prompt("Introduce un número");
+            var number2 = prompt("Introduce otro número");
+            var operation = prompt("¿Qué operación quieres realizaar? 1 Sumar, 2 Restar, 3 Multiplicar, 4 Dividir");
+            switch (operation) {
+                case '1':
+                    number1 = Number(number1);
+                    number2 = Number(number2);
+                    var result = number1 + number2;
+                        alert(number1 + " " + "+" + " " + number2 + " " + "=" + " " + result);
+                        break;
+                case '2':
+                    number1 = Number(number1);
+                    number2 = Number(number2);
+                    var result = number1 - number2;
+                        alert(number1 + " " + "-" + " " + number2 + " " + "=" + " " + result);
+                        break;
+                case '3':
+                    number1 = Number(number1);
+                    number2 = Number(number2);
+                    var result = number1 * number2;
+                        alert(number1 + " " + "*" + " " + number2 + " " + "=" + " " + result);
+                        break; 
+                case '4':
+                    number1 = Number(number1);
+                    number2 = Number(number2);
+                    var result = number1 / number2;
+                        alert(number1 + " " + "/" + " " + number2 + " " + "=" + " " + result);
+                        break;  
+            };
+            var repeat = prompt("¿Quieres realizar otra operación? S/N");
+            
+        } while (repeat = "S");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

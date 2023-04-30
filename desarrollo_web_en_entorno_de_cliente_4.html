@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo web en entorno cliente. Actividad práctica 4</title>
+    <script>
+        /*Realiza un script que muestre dos mensajes una con la fecha actual formateada dd/MM/YYYY. Y otro con hh:mm:ss.*/
+       var date = new Date();
+
+        var day = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear();
+
+        if(day < 10 && month < 10){
+            alert("0" + day + "/" + "0" + month + "/" + year);
+        }else if (day < 10 && month > 10){
+            alert("0" + day + "/" + month + "/" + year);
+        }else if (day > 10 && month < 10){
+            alert(day + "/" + "0" + month + "/" + year);
+        }else{
+            alert(day + "/" + month + "/" + year);
+        };
+
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var seconds = date.getSeconds();
+
+        alert(hours + ":" + minutes + ":" + seconds);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

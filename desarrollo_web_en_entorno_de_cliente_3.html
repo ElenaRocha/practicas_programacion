@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo web en entorno cliente. Actividad práctica 3</title>
+    <script>
+        /*Realiza un script para validar un DNI y que muestre si es correcto o no y que muestre su letra correspondiente*/
+        var dni = parseInt(prompt("Introduce el número de tu DNI"));
+        var myArr = String(dni).split("");
+
+        function getLetter() {
+            var letters = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J','Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E','T'];
+            var rest = dni % 23;
+            var dniLetter = letters[rest];
+            alert("La letra correspondiente a este DNI es: " + dniLetter);
+        };
+
+        function validateDNI() {
+            if (dni < 0 || dni > 99999999 || myArr.length != 8) {
+            alert("El número indicado no es válido, comprueba que has introducido todos los dígitos");
+            }
+            else {
+             getLetter();
+            };
+        };
+
+        validateDNI(dni);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
