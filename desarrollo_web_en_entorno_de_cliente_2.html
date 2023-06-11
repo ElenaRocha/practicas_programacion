@@ -8,56 +8,6 @@
     <script>
         /*Realiza un script para que pida al usuario dos números y solicite que operación quiere realizar (1 Sumar, 2 Restar, 3 Multiplicar, 4 Dividir). Finalmente muestre el resultado de la operación e indique si quiere repetir la operación (S/N). El programa finaliza cuando el usuario introduce N.*/
 
-        /*Con ambas opciones, tanto la comentada como la no comentada, consigo que se repita la función solicitando un nuevo número para calcular, pero no que pare al responder a "¿Quieres realizar otra operación? S/N" con "N"*/
-
-        /*let calculadora = respuesta => {
-            var number1 = prompt("Introduce un número");
-            var number2 = prompt("Introduce otro número");
-            var operation = prompt("¿Qué operación quieres realizaar? 1 Sumar, 2 Restar, 3 Multiplicar, 4 Dividir");
-            switch (operation) {
-                case '1':
-                    number1 = Number(number1);
-                    number2 = Number(number2);
-                    var result = number1 + number2;
-                        alert(number1 + " " + "+" + " " + number2 + " " + "=" + " " + result);
-                        respuesta = prompt("¿Quieres realizar otra operación? S/N");
-                        return calculadora(respuesta)
-                        break;
-                case '2':
-                    number1 = Number(number1);
-                    number2 = Number(number2);
-                    var result = number1 - number2;
-                        alert(number1 + " " + "-" + " " + number2 + " " + "=" + " " + result);
-                        respuesta = prompt("¿Quieres realizar otra operación? S/N");
-                        return calculadora(respuesta)
-                        break;
-                case '3':
-                    number1 = Number(number1);
-                    number2 = Number(number2);
-                    var result = number1 * number2;
-                        alert(number1 + " " + "*" + " " + number2 + " " + "=" + " " + result);
-                        respuesta = prompt("¿Quieres realizar otra operación? S/N");
-                        return calculadora(respuesta)
-                        break; 
-                case '4':
-                    number1 = Number(number1);
-                    number2 = Number(number2);
-                    var result = number1 / number2;
-                        alert(number1 + " " + "/" + " " + number2 + " " + "=" + " " + result);
-                        respuesta = prompt("¿Quieres realizar otra operación? S/N");
-                        return calculadora(respuesta)
-                        break;  
-            };
-        };
-
-        let respuesta = prompt("¿Empezar a calcular? S/N");
-
-        if (respuesta === "S"){
-            calculadora(respuesta);
-        }else{
-            alert("adios");
-        };*/
-
         do {
             var number1 = prompt("Introduce un número");
             var number2 = prompt("Introduce otro número");
@@ -90,7 +40,7 @@
             };
             var repeat = prompt("¿Quieres realizar otra operación? S/N");
             
-        } while (repeat = "S");
+        } while (repeat == "S");
 
     </script>
 </head>
