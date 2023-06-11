@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo web en entorno cliente. Actividad práctica 6</title>
+    <script>
+        var number = parseInt(prompt("Introduce un número del 1 al 50"));
+        var sum = number*(number+1)/2;
+        var average = sum/number;
+
+        function oddOrEven(number){
+            var odd = 0;
+            var even = 0;
+            for (let i = 0; i <= number; i++) {
+                if (i % 2 === 0){
+                    even++
+                }else{
+                    odd++
+                };
+            };
+            return alert("Y hay " + odd + " números pares " + "y " + even + " números impares")
+        };
+
+        alert("La suma de los números del " + number + " al 50 es " + sum);
+        alert("La media de la suma es " + average);
+        
+        oddOrEven(number);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
